@@ -1,0 +1,22 @@
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 92px 80px 218px;
+  }
+  
+  @media (max-width: 991px) {
+    .errorContainer {
+      padding: 0 20px 100px;
+    }
+  }
+  
+  .errorImage {
+    aspect-ratio: 0.99;
+    object-fit: contain;
+    object-position: center;
+    width: 705px;
+    max-width: 100%;
+    height: 450px;
+  }

@@ -1,0 +1,139 @@
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: linear-gradient(to right, #a2d2e2, #7a7fe0);
+  height: 100vh;
+}
+
+.login-container {
+  background-image: url("../assets/images/login-background.png");
+  display: flex;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-content {
+  background-image: url("../assets/images/login-background.png");
+  display: flex;
+  width: 900px;
+}
+
+.login-form-column {
+  width: 100%;
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  text-align: -webkit-auto;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.welcome-message {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.login-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #c0dbea;
+}
+
+input:hover {
+  background: #ffffff;
+}
+
+.password-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.forgot-password {
+  text-decoration: none;
+  color: #17135c;
+}
+
+.forgot-password:hover {
+  color: #4a90e2;
+}
+
+.login-button {
+  background-color: #17135c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 50%;
+}
+
+.login-button:hover {
+  background-color: #4a90e2;
+}
+
+.login-button-field {
+  text-align: center;
+}
+
+.image-column {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.login-image {
+  max-width: fit-content;
+  align-self: end;
+}
+
+@media (max-width: 991px) {
+  .login-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .login-form-column {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .image-column {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .login-image {
+    width: 60%;
+  }
+}

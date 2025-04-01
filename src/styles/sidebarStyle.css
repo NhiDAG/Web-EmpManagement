@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-content {
+  flex-grow: 1;
+  margin-left: 260px; 
+  padding: 20px;
+  background: transparent;
+  transition: margin-left 0.4s ease;
+}
+
+.sidebar.collapsed + .main-content {
+  margin-left: 85px;
+}
+
+.admin-container{
+  display: flex;
+  min-height: 100vh;
+  transition: all 0.4s ease-in-out;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background: #151a2e;
+  transition: all 0.4s ease;
+}
+
+.sidebar.collapsed {
+  width: 85px;
+}
+
+.sidebar-header {
+  display: flex;
+  padding: 25px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-header .logo img {
+  width: 46px;
+  height: 46px;
+  display: block;
+  object-fit: contain;
+  margin: 0;
+}
+
+.sidebar-header .sidebar-toggler {
+  height: 35px;
+  width: 35px;
+  border: none;
+  color: #151a2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.4s ease;
+}
+
+.sidebar-header .sidebar-toggler:hover {
+  background: #dde4fb;
+}
+
+.sidebar.collapsed .sidebar-toggler{
+  transform: translate(-40px, 65px);
+}
+
+.sidebar-header .sidebar-toggler{
+  font-size: 1.95rem;
+  transition: 0.4s ease;
+}
+
+.sidebar.collapsed .sidebar-toggler .chevron-left{
+    transform: rotate(180deg);
+}
+  
+
+.sidebar-nav .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 4px;
+  padding: 0 15px;
+  flex-direction: column;
+  transform: translateY(15px);
+  transition: 0.4s ease;
+}
+
+.sidebar.collapsed .sidebar-nav .primary-nav {
+  transform: translateY(65px);
+}
+
+.sidebar-nav .nav-item .nav-link{
+  color: #fff;
+  background: #151a2e;
+  display: flex;
+  gap: 12px;
+  white-space: nowrap;
+  padding: 12px 15px;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.4s ease;
+}
+
+.sidebar-nav .nav-item:hover > .nav-link{
+  color: #151a2e;
+  background: #eef2ff;
+}
+
+.sidebar-nav .nav-link .nav-label {
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.collapsed .nav-link .nav-label {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar-nav .secondary-nav {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+
+.chevron-left{
+  width: 5em;
+  height: 0.5em;
+}
+
+.nav-icon{
+  width: 2em;
+  height: 25px;
+}

@@ -1,0 +1,206 @@
+.employee-table-content {
+  margin: auto;
+  font-family: 'Arial', sans-serif;
+  background: transparent;
+}  
+
+h2 {
+  margin: 20px 0 0 0;
+}
+
+.remove-employee-btn,
+.update-employee-btn,
+.modify-employee-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+  padding: 0;
+}
+
+.remove-employee-btn:hover
+.update-employee-btn:hover,
+.modify-employee-btn:hover {
+  transform: scale(1.1);
+  background-color: #f8f8f8;
+}
+
+.register-employee-btn {
+  padding: 10px 20px;
+  background-color: #280559;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.register-employee-btn:hover {
+  transform: translateY(-2px);
+}
+
+clock-in-employee-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+  background-color: #280559;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.clock-in-employee-btn:hover {
+  transform: translateY(-2px);
+}
+
+#employeeDataTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 50px 0 0 0;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#employeeDataTable thead th {
+  background-color: #280559;
+  color: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#employeeDataTable thead td {
+  font-weight: 600;
+  text-align: center;
+  padding: 5px;
+}
+
+#employeeDataTable tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+#employeeDataTable tbody tr:hover {
+  background-color: #f8f8f8;
+}
+
+#employeeDataTable tbody td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  color: #333;
+}
+
+#employeeDataTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#employeeDataTable tbody tr:hover {
+  cursor: pointer;
+  background-color: #f7f7ff;
+}
+
+
+.register-employee-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+  background: #280559;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  font-family: 'Arial', sans-serif;
+}
+
+button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+button img {
+  width: 20px;
+  height: 20px;
+  margin-left: 0px;
+  vertical-align: middle;
+}
+
+.employee-notification {
+  background-color: #f0f4ff;  
+  color: #1a3b5d;  
+  border-left: 4px solid #007bff;  
+  padding: 10px 15px;  
+  margin-top: 20px; 
+  border-radius: 5px; 
+  font-size: 16px;  
+  font-weight: bold;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  transition: all 0.3s ease;  
+}
+
+.employee-notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.employee-notification.hide {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+.employee-options {
+  display: flex;
+  gap: 20px;
+}
+
+.employee-pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 1055px;
+}
+
+.employee-pagination button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: dashed;
+}
+
+.employee-pagination button:disabled {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.employee-pagination button:hover:not(:disabled) {
+  background-color: transparent;
+  transform: scale(1.05);
+}
+
+.employee-pagination span{
+  color: #fff;
+}

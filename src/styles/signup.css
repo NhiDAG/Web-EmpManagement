@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .add-form{
+    padding: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .add-button-field{
+    text-align: center;
+  }
+
+  a{
+    color: #333;
+  }
+
+  #employeeForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+  }
+  
+  #employeeForm div {
+    margin-bottom: 15px;
+  }
+  
+  #employeeForm label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  
+  #employeeForm input,
+  #employeeForm select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  #employeeForm input[type="number"],
+  #employeeForm input[type="tel"],
+  #employeeForm input[type="email"] {
+    font-family: Arial, sans-serif;
+  }
+  
+  #employeeForm input:focus,
+  #employeeForm select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  #employeeForm button {
+    /* width: 50%; */
+    padding: 12px;
+    font-size: 16px;
+    background-color: #280559;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+    padding: 0 9px;
+}
+  
+  @media (max-width: 600px) {
+    #employeeForm {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    #employeeForm h2 {
+      font-size: 18px;
+    }
+  }
+  
+
+.success-container {
+  background-color: #f4f4f9;
+  border-radius: 5px;
+  padding: 50px;
+    text-align: center;
+}
+
+.success-icon {
+    color: green;
+    font-size: 50px;
+}
+
+.email-text {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.btn-login {
+    padding: 10px 20px;
+    background-color: #450a82;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #450a82;
+}
